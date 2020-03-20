@@ -19,7 +19,7 @@
       </div>
     </div>
     <footer>
-        <a id="footer" href="https://github.com/carachip/creativeProject.git">https://github.com/carachip/creativeProject.git</a>
+        <a id="footer" href="https://github.com/carachip/creativeProjectVue.git">https://github.com/carachip/creativeProjectVue.git</a>
     </footer>
   </div>
 </template>
@@ -34,6 +34,8 @@
     color: gray;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #pageInfo {
     background-color: lightsteelblue;

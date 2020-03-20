@@ -36,7 +36,7 @@
 #title h2 {
     margin: .25em;
     text-align: center;
-    font-size: 4em;
+    font-size: 65px;
     font-weight: bold;
 }
 
@@ -52,6 +52,9 @@
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
+}
+#menuBar div {
+  margin: 0px;
 }
 #nav a {
     color:rgba(0,0,0,.5);

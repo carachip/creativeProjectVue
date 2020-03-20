@@ -43,7 +43,7 @@
             </div>
         </div>
         <footer>
-            <a id="footer" href="https://github.com/carachip/creativeProject.git">https://github.com/carachip/creativeProject.git</a>
+            <a id="footer" href="https://github.com/carachip/creativeProjectVue.git">https://github.com/carachip/creativeProjectVue.git</a>
         </footer>
     </div>
 </template>
