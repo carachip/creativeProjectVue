@@ -11,7 +11,7 @@
                         <span>Please enter any kitchen terms you are unfamiliar with into the dictionary!</span>
                         <div id="inputAndButton">
                             <input id="userInput" v-model="search" type="text"/>
-                            <input @submit.prevent="searchWord()" id="inputSubmit" type="submit" value="Submit"/>
+                            <div @click="searchWord()" id="inputSubmit">Submit</div>
                         </div>
                     </form>
                     <div v-if="notFound" id="notFound">
@@ -60,19 +60,20 @@ export default {
     },
     methods: {
         searchWord: function() {
-            if (this.search === "") return;
-            const url = "https://cors-anywhere.herokuapp.com/https://owlbot.info/api/v4/dictionary/" + this.search;
+            var self = this;
+            if (self.search === "") return;
+            const url = "https://cors-anywhere.herokuapp.com/https://owlbot.info/api/v4/dictionary/" + self.search;
             fetch(url, {mode: "cors", headers: {Authorization: "Token 582abfda2d9a5c10e57548b285a1a0589d8313d4", "Set-Cookie": "HttpOnly; Secure; SameSite=None"}})
                 .then(function(response) {
                 return response.json();
                 }).then(function(json) {
                     json.image = json.image_url
-                    this.searchResults = json;
-                    this.notFound = false
+                    self.searchResults = json;
+                    self.notFound = false
                 })
                 .catch(function () {
-                    this.searchResults = {};
-                    this.notFound = true
+                    self.searchResults = {};
+                    self.notFound = true
                 });
         }
     }
@@ -87,7 +88,15 @@ export default {
 #descriptionBox {
     margin: 40px;
 }
-
+#inputAndButton {
+    display: flex;
+}
+#inputSubmit {
+    cursor: pointer;
+    background-color:white;
+    padding: 4px;
+    margin-left: 4px;
+}
 #dictName{
     display: flex;
     flex-direction: row;

@@ -5,6 +5,7 @@ import RecipeList from "../views/RecipeList.vue"
 import Tips from "../views/Tips.vue"
 import Dictionary from "../views/Dictionary.vue"
 import Recipe from "../views/Recipe.vue"
+import EditRecipe from "../views/EditRecipe.vue"
 
 Vue.use(VueRouter);
 
@@ -30,9 +31,14 @@ const routes = [
     component: Dictionary
   },
   {
-    path: "/recipe",
+    path: "/recipe/:id",
     name: "Recipe",
     component: Recipe
+  },
+  {
+    path: "/editRecipe/:id",
+    name: "EditRecipe",
+    component: EditRecipe
   },
 ];
 
