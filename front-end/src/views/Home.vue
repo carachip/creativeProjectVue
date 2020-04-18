@@ -64,6 +64,13 @@ footer {
     margin-top: 1em;
     margin-bottom: 2em;
 }
+button {
+    color: black;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 5px;
+}
 @media (max-width: 800px) {
     #pageInfo {
         padding: 20px;

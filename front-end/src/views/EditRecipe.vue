@@ -224,11 +224,4 @@ export default {
 #buttons {
     align-self: flex-end;
 }
-button {
-    color: black;
-    padding: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 5px;
-}
 </style>

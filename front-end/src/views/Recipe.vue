@@ -193,13 +193,6 @@ export default {
     font-weight: 600;
     font-family: 'Amatic SC', cursive;
 }
-button {
-    color: black;
-    padding: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 5px;
-}
 #buttons {
     display: flex;
     flex-direction: row;

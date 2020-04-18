@@ -4,7 +4,7 @@
             <div id="navigation">
                 Home > Recipes
             </div>
-            <router-link class="subheadings" to="/editRecipe/add">>>Add a new recipe</router-link>
+            <router-link class="subheadings" id="addRecipe" to="/editRecipe/add">>>Add a new recipe</router-link>
             <div id="pageInfo">
                 <div v-for="heading in Object.keys(recipeMap)" :key="heading">
                     <div class="subheadings">{{heading}}</div>
@@ -76,6 +76,9 @@ export default {
 </script>
 
 <style scoped>
+#addRecipe {
+    padding-left: 10px;
+}
 a {
     color: black;
 }
